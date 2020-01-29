@@ -34,6 +34,12 @@
             this.lblnum1 = new System.Windows.Forms.Label();
             this.lblnum2 = new System.Windows.Forms.Label();
             this.lblrespuesta = new System.Windows.Forms.Label();
+            this.grbOperaciones = new System.Windows.Forms.GroupBox();
+            this.optMultiplicacion = new System.Windows.Forms.RadioButton();
+            this.optResta = new System.Windows.Forms.RadioButton();
+            this.optSuma = new System.Windows.Forms.RadioButton();
+            this.optDivision = new System.Windows.Forms.RadioButton();
+            this.grbOperaciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnprocesar
@@ -87,11 +93,67 @@
             this.lblrespuesta.TabIndex = 5;
             this.lblrespuesta.Text = "Respuesta: ?";
             // 
+            // grbOperaciones
+            // 
+            this.grbOperaciones.Controls.Add(this.optDivision);
+            this.grbOperaciones.Controls.Add(this.optMultiplicacion);
+            this.grbOperaciones.Controls.Add(this.optResta);
+            this.grbOperaciones.Controls.Add(this.optSuma);
+            this.grbOperaciones.Location = new System.Drawing.Point(227, 21);
+            this.grbOperaciones.Name = "grbOperaciones";
+            this.grbOperaciones.Size = new System.Drawing.Size(83, 120);
+            this.grbOperaciones.TabIndex = 6;
+            this.grbOperaciones.TabStop = false;
+            this.grbOperaciones.Text = "Operaciones";
+            // 
+            // optMultiplicacion
+            // 
+            this.optMultiplicacion.AutoSize = true;
+            this.optMultiplicacion.Location = new System.Drawing.Point(6, 65);
+            this.optMultiplicacion.Name = "optMultiplicacion";
+            this.optMultiplicacion.Size = new System.Drawing.Size(72, 17);
+            this.optMultiplicacion.TabIndex = 2;
+            this.optMultiplicacion.Text = "Multiplicar";
+            this.optMultiplicacion.UseVisualStyleBackColor = true;
+            // 
+            // optResta
+            // 
+            this.optResta.AutoSize = true;
+            this.optResta.Location = new System.Drawing.Point(6, 42);
+            this.optResta.Name = "optResta";
+            this.optResta.Size = new System.Drawing.Size(53, 17);
+            this.optResta.TabIndex = 1;
+            this.optResta.Text = "Resta";
+            this.optResta.UseVisualStyleBackColor = true;
+            // 
+            // optSuma
+            // 
+            this.optSuma.AutoSize = true;
+            this.optSuma.Checked = true;
+            this.optSuma.Location = new System.Drawing.Point(6, 21);
+            this.optSuma.Name = "optSuma";
+            this.optSuma.Size = new System.Drawing.Size(52, 17);
+            this.optSuma.TabIndex = 0;
+            this.optSuma.TabStop = true;
+            this.optSuma.Text = "Suma";
+            this.optSuma.UseVisualStyleBackColor = true;
+            // 
+            // optDivision
+            // 
+            this.optDivision.AutoSize = true;
+            this.optDivision.Location = new System.Drawing.Point(6, 88);
+            this.optDivision.Name = "optDivision";
+            this.optDivision.Size = new System.Drawing.Size(54, 17);
+            this.optDivision.TabIndex = 3;
+            this.optDivision.Text = "Dividir";
+            this.optDivision.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(243, 178);
+            this.ClientSize = new System.Drawing.Size(327, 189);
+            this.Controls.Add(this.grbOperaciones);
             this.Controls.Add(this.lblrespuesta);
             this.Controls.Add(this.lblnum2);
             this.Controls.Add(this.lblnum1);
@@ -100,6 +162,8 @@
             this.Controls.Add(this.btnprocesar);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.grbOperaciones.ResumeLayout(false);
+            this.grbOperaciones.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +177,11 @@
         private System.Windows.Forms.Label lblnum1;
         private System.Windows.Forms.Label lblnum2;
         private System.Windows.Forms.Label lblrespuesta;
+        private System.Windows.Forms.GroupBox grbOperaciones;
+        private System.Windows.Forms.RadioButton optMultiplicacion;
+        private System.Windows.Forms.RadioButton optResta;
+        private System.Windows.Forms.RadioButton optSuma;
+        private System.Windows.Forms.RadioButton optDivision;
     }
 }
 
